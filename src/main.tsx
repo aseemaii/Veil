@@ -1,5 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import './ui/fonts.css';
 import './ui/tokens.css';
 import './ui/app.css';
@@ -15,5 +16,6 @@ if (!root) throw new Error('Veil root element is missing');
 createRoot(root).render(
   <StrictMode>
     <App />
+    <SpeedInsights />
   </StrictMode>,
 );
